@@ -1,0 +1,128 @@
+@import "animate.css";
+::-webkit-scrollbar {width: 6px}
+::-webkit-scrollbar-track {background: #181818}
+::-webkit-scrollbar-thumb {
+    background: #242424;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {background: #222}
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+    transition: all 0.4s;
+}
+body.dark {
+    color: white;
+    background: #181818;
+}
+body.light {
+    color: black;
+    background: #fff;
+}
+div#switch {
+    position: fixed;
+    bottom: 0; right: 0;
+    margin: 14px;
+    border-radius: 50px;
+    padding: 8px;
+    cursor: pointer;
+}
+div#switch i {font-size: 22px}
+body.dark div#switch {
+    background: #222;
+    box-shadow: 0px 1px 2px 3px rgba(34,34,34,0.8);
+    color: white;
+}
+body.light div#switch {
+    background: #eaeaea;
+    box-shadow: 0px 1px 1px 2px rgba(234,234,234,0.6);
+    color: black;
+}
+body.dark div#switch i.fa-cloud-sun {display: none}
+body.dark div#switch i.fa-cloud-moon {display: block}
+body.light div#switch i.fa-cloud-sun {display: block}
+body.light div#switch i.fa-cloud-moon {display: none}
+div#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    transition: all 0.4s;
+    padding: 0px 12px;
+    box-sizing: border-box;
+    top:0;
+}
+div#navbar.mini {height: 50px}
+body.dark div#navbar.mini {
+    background: #181818;
+    box-shadow: 0px 1px 3px 5px #161616;
+}
+body.light div#navbar.mini {
+    background: #fff;
+    box-shadow: 0px 1px 3px 5px #fdfdfd;
+}
+div#navbar :first-child {margin-left: 12px}
+div#navbar > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+}
+div#navbar > div h3:hover {
+    color: #ff0abb;
+    cursor: pointer;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+footer:first-child {width: 30%;}
+footer > div:not(:first-child) {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+    box-sizing: border-box;
+}
+footer > div h3 {font-weight: 700}
+footer > div h4 {cursor: pointer}
+button:hover {
+    animation: 'gradIn' 0.4s forwards;
+    -webkit-animation: 'gradIn' 0.4s forwards;
+    cursor: pointer;
+    color: white;
+}
+body.dark button {
+    border: 1px solid #fff;
+    color: #fff;
+}
+body.light button {
+    border: 1px solid #000;
+    color: #000;
+}
+button {
+    background: rgba(0,0,0,0);
+    border-radius: 50px;
+    padding: 15px 20px;
+    font-size: 20px;
+    animation: 'gradOut' 0.4s;
+    -webkit-animation: 'gradOut' 0.4s;
+    transition: all 0.4s;
+}
+body.dark button:hover {box-shadow: 0px 0px 6px 6px #1a1a1a}
+body.light button:hover {
+    box-shadow: 0px 1px 3px 5px #fafafa;
+    color: white;
+    border: 1px solid #fff;
+}

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oxygen:400,700&display=swap');
+h1,h2,h3,h4,h5,h6,p,a,li {margin: 0}
+h1,h2,h3,h4,h5,h6,p,a,li:not(div#navbar *) {transition: color 0.4s}
+h1,h2 {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+}
+h3,h4 {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+}
+h5,h6,p,a,li {font-family: 'Open Sans', sans-serif}

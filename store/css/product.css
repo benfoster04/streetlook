@@ -1,0 +1,35 @@
+div#overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+}
+div#overview > div {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 50%;
+}
+div#overview div#image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#overview div#image > div {
+    height: 600px;
+    width: 450px;
+    background: url("../../media/ben.png") no-repeat center/contain;
+    border-radius: 60px;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.7);
+}
+div#overview div.split {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+div#overview div.split > div {
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
