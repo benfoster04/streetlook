@@ -1,11 +1,17 @@
 @import "animate.css";
 ::-webkit-scrollbar {width: 6px}
-::-webkit-scrollbar-track {background: #181818}
-::-webkit-scrollbar-thumb {
+body.dark ::-webkit-scrollbar-track {background: #181818}
+body.dark ::-webkit-scrollbar-thumb {
     background: #242424;
     border-radius: 10px;
 }
-::-webkit-scrollbar-thumb:hover {background: #222}
+body.dark ::-webkit-scrollbar-thumb:hover {background: #222}
+body.light ::-webkit-scrollbar-track {background: #fff}
+body.light ::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+body.light ::-webkit-scrollbar-thumb:hover {background: #f7f7f7}
 body {
     margin: 0;
     scroll-behavior: smooth;
@@ -54,6 +60,7 @@ div#navbar {
     padding: 0px 12px;
     box-sizing: border-box;
     top:0;
+    z-index: 2;
 }
 div#navbar.mini {height: 50px}
 body.dark div#navbar.mini {
@@ -119,7 +126,10 @@ button {
     animation: 'gradOut' 0.4s;
     -webkit-animation: 'gradOut' 0.4s;
     transition: all 0.4s;
+    user-select: none;
+    outline: none;
 }
+button:focus {outline: 0}
 body.dark button:hover {box-shadow: 0px 0px 6px 6px #1a1a1a}
 body.light button:hover {
     box-shadow: 0px 1px 3px 5px #fafafa;

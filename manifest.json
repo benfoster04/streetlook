@@ -1,0 +1,37 @@
+{
+    "name": "Streetlook Fashion",
+    "short_name": "Streetlook",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "A fashion startup founded by students from a small town called Rugby in the United Kingdom. A startup who's purpose and goal is to create fashion that doesn't just fit and feel nice, but also suit purpose and looks.",
+    "icons": [{
+        "src": "media/icon/16x16.png",
+        "sizes": "16x16",
+        "type": "image/png"
+    },{
+        "src": "media/icon/32x32.png",
+        "sizes": "32x32",
+        "type": "image/png"
+    },{
+        "src": "media/icon/64x64.png",
+        "sizes": "64x64",
+        "type": "image/png"
+    },{
+        "src": "media/icon/128x128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+    },{
+        "src": "media/icon/256x256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+    },{
+        "src": "media/icon/384x384.png",
+        "sizes": "384x384",
+        "type": "image/png"
+    },{
+        "src": "media/icon/512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }]
+}

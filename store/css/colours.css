@@ -1,0 +1,32 @@
+div.red,
+div.darkred,
+div.orange,
+div.gold,
+div.lime,
+div.grass,
+div.lightgreen,
+div.sky,
+div.aqua,
+div.ocean,
+div.purple,
+div.lipstick,
+div.hotpink {
+    display: block;
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #000;
+}
+div.red {background: #e33}
+div.darkred {background: #a22}
+div.orange {background: #e73}
+div.gold {background: #e93}
+div.lime {background: #dd3}
+div.grass {background: #8e3}
+div.lightgreen {background: #3e3}
+div.sky {background: #2e9}
+div.aqua {background: #3ce}
+div.ocean {background: #39e}
+div.purple {background: #33e}
+div.lipstick {background: #93e}
+div.hotpink {background: #e3e}
