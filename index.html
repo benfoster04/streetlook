@@ -35,13 +35,43 @@
             <i id="cart" class="fas fa-shopping-cart"></i>
         </div>
     </div>
-    <div id="content">
-        <div id="sec1">
-            <h2>Clothes that don't just feel good..</h2>
-            <h3>.. But look good too.</h3>
+    <div id="sec1">
+        <h2>Clothes that don't just feel good..</h2>
+        <h3>.. But look good too.</h3>
+    </div>
+    <div id="sec2">
+    </div>
+    <div id="sec4">
+        <h2>Special goodies await, signup to our newsletter</h2>
+        <h4>We won't spam you, but you can unsubscribe at any time.</h4>
+        <div>
+            <input type="text" id="email" placeholder="E-Mail Address">
+            <button id="submit"><h5>Sign me up!</h5></button>
         </div>
-        <div id="sec2">
+        <h4 id="rtrn"></h4>
+    </div>
+    <div id="sec4popup" class="hide">
+        <div>
+            <h2>Hey again, sorry to disturb you..</h2>
+            <h3>Just wondering if you'd like to set up an account with the email you provided?</h3>
+            <br>
+            <h4>Gain access to special perks such as:</h4>
+            <h5>• Cross-device order basket and preferences</h5>
+            <h5>• Leave reviews on your favourite products</h5>
+            <h5>• Get 10% off of your order when you spend over £40.00</h5>
+            <h5>And a whole load more.</h5>
+            <br>
+            <h3 style="text-align: center">So what do you think?</h3>
+            <div>
+                <button><h4>Yes Please!</h4></button>
+                <button><h4>No thank you.</h4></button>
+            </div>
         </div>
+    </div>
+    <div loader>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="15"></circle>
+        </svg>
     </div>
     <div style="height: 1000px"></div>
     <div id="switch">
@@ -51,6 +81,9 @@
     <script type="application/javascript" src="js/switch.js"></script>
     <script type="application/javascript" src="js/navbar.js"></script>
     <script type="application/javascript" src="js/master.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-firestore.js"></script>
+    <script type="application/javascript" src="js/newsletter.js"></script>
 </body>
 <footer>
     <div>

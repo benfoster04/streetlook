@@ -10,7 +10,12 @@ div.aqua,
 div.ocean,
 div.purple,
 div.lipstick,
-div.hotpink {
+div.hotpink,
+div.white,
+div.cream,
+div.lightgrey,
+div.darkgrey,
+div.black {
     display: block;
     box-sizing: border-box;
     width: 10px;
@@ -30,3 +35,8 @@ div.ocean {background: #39e}
 div.purple {background: #33e}
 div.lipstick {background: #93e}
 div.hotpink {background: #e3e}
+div.white {background: #fff}
+div.cream {background: #ffd}
+div.lightgrey {background: #ccc}
+div.darkgray {background: #777}
+div.black {background: #222}

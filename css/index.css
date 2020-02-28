@@ -1,11 +1,3 @@
-body {
-    perspective: 1px;
-}
-div#content {
-    overflow-y: hidden;
-    overflow-x: hidden;
-    height: 100vh;
-}
 div#sec1 {
     width: 100%;
     height: 80vh;
@@ -13,15 +5,7 @@ div#sec1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-}
-div#sec1::after {
-    content: " ";
-    position: absolute;
-    top:0;bottom:0;left:0;right:0;
-    transform: translateZ(-1px) scale(2);
-    z-index: -1;
-    background: url("../media/para.jpg") no-repeat center/cover;
+    background: url(../media/para.jpg) no-repeat fixed center/cover;
 }
 div#sec1 h2 {
     animation: fadeIn 1s ease-out 1s 1 forwards;
@@ -30,4 +14,89 @@ div#sec1 h2 {
 div#sec1 h3 {
     animation: fadeIn 1s ease-out 2s 1 forwards;
     -webkit-animation: fadeIn 1s ease-out 2s 1 forwards;
+}
+div#sec4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+div#sec4 div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+div#sec4 div input {
+    padding: 5px 14px;
+    width: 300px;
+    height: 60px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+body.dark div#sec4 div input::placeholder {color: #888}
+body.light div#sec4 div input::placeholder{color: #000}
+body.dark div input {
+    background: #181818;
+    border: 1px solid #fff;
+    color: white;
+}
+body.light div input {
+    background: #fff;
+    border: 1px solid #000;
+}
+div#sec4 div input, div#sec4 div button {outline: 0}
+div#sec4 div button {
+    border-radius: 0;
+    width: 140px;
+    margin-left: 10px;
+    height: 60px;
+    padding: 5px;
+}
+body.dark div#sec4popup div {
+    background: #181818;
+    color: white;
+}
+body.light div#sec4popup div{
+    background: #fff;
+    color: black;
+}
+body.dark div#sec4popup {background: rgba(24,24,24,0.6)}
+body.light div#sec4popup{background: rgba(230,230,230,0.7)}
+div#sec4popup {
+    position: fixed;
+    top:0;left:0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s;
+}
+div#sec4popup.hide {
+    display: none;
+    opacity: 0;
+}
+div#sec4popup.show {
+    display: flex;
+    opacity: 1;
+}
+div#sec4popup div {
+    padding: 8px;
+    border-radius: 10px;
+}
+div#sec4popup div div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
 }
