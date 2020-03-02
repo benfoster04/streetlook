@@ -7,6 +7,7 @@ div#sec1 {
     align-items: center;
     background: url(../media/para.jpg) no-repeat fixed center/cover;
 }
+div#sec1 > * {opacity: 0}
 div#sec1 h2 {
     animation: fadeIn 1s ease-out 1s 1 forwards;
     -webkit-animation: fadeIn 1s ease-out 1s 1 forwards;
