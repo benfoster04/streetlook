@@ -21,8 +21,9 @@ div#overview div#image > div {
     width: 450px;
     background: url("../../media/ben.png") no-repeat center/contain;
     border-radius: 60px;
-    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.7);
 }
+body.dark div#overview div#image > div {box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.7)}
+body.light div#overview div#image > div{box-shadow: 0px 0px 12px 4px rgba(180,180,180,0.6)}
 div#overview div.split {
     display: flex;
     flex-direction: row;
