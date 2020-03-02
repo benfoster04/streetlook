@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", function() {
     firebase.initializeApp({
-        apiKey: 'AIzaSyD3bZAg31CBbQ3zh0zFijABcWjXjEqx3ms',
+        apiKey: 'lol no',
         authDomain: 'ben-aurora.firebaseapp.com',
         projectId: 'ben-aurora'
     });
